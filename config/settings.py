@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'disqus',
     'django.contrib.sites',
-    # 'storages',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -135,15 +135,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL ='/'
 
-# AWS_ACCESS_KEY_ID = 'AKIAXEQCFLSPZYM43RUY'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_REGION = 'ap-northeast-2'
-# AWS_STORAGE_BUCKET_NAME = 'imgur19'
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME, AWS_REGION)
-# AWS_S3_OBJECT_PARAMETERS = {
-#     'CacheControl': 'max-age=86400',
-# }
-# DEFAULT_FILE_STORAGE = 'config.asset_storage.MediaStorage'
+AWS_ACCESS_KEY_ID = 'AKIAXEQCFLSPVWBIIDUV'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_REGION = 'ap-northeast-2'
+AWS_STORAGE_BUCKET_NAME = 'imgur19'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME,AWS_REGION)
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+
+DEFAULT_FILE_STORAGE = 'config.asset_storage.MediaStorage'
 
 DISQUS_WEBSITE_SHORTNAME = 'imgur19'
 SITE_ID = 1
